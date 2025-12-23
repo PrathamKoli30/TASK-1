@@ -19,3 +19,5 @@ The project demonstrates a fixed navigation bar with a scroll-based background c
 
 ## Use Case
 This project is suitable for beginners learning frontend development and basic DOM manipulation.
+
+main file :(navigation.html)
