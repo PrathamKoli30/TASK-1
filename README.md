@@ -4,6 +4,7 @@ Responsive Navigation Bar Website built using HTML, CSS, and JavaScript with a f
 
 This is a responsive static website created using HTML, CSS, and JavaScript. 
 The project demonstrates a fixed navigation bar with a scroll-based background color change effect.
+
 main file :(navigation.html)
 
 ## Features
