@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<style>
+    * {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+
+    nav {
+        position: fixed;
+        background-color: #1E69E0;
+        /*inital color */
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        ;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition: 0.4s ease;
+        z-index: 1000;
+    }
+
+    nav.scrolled {
+        background: rgb(86, 151, 250);
+        /* light blue when scrolled */
+    }
+
+    nav .webname {
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+        width: 80px;
+    }
+
+    nav .menu {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+    }
+
+    nav .menu li a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        font-weight: 500;
+        transition: 0.3 ease;
+    }
+
+    img {
+        width: 100%;
+        padding-top: 110px;
+    }
+
+    .content {
+        padding-top: 150px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <nav id="navbar">
+        <div class="webname">INFOTECH SOLUTION</div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <img class="img" src="Information-Technology-2.jpeg">
+    <section class="content">
+        <p>Our mission is to create innovative and accessible learning solutions that empower people of all ages and
+            backgrounds to achieve their full potential.</p>
+        <p>@infotech.solution</p>
+    </section>
+    <script>
+        const navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+
+    </script>
+</body>
+
+</html>

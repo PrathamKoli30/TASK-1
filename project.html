@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+</head>
+<style>
+    * {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+
+    nav {
+        position: fixed;
+        background-color: #1E69E0;
+        /*inital color */
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        ;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition: 0.4s ease;
+        z-index: 1000;
+    }
+
+    nav.scrolled {
+        background: rgb(86, 151, 250);
+        /* light blue when scrolled */
+    }
+
+    nav .webname {
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+        width: 80px;
+    }
+
+    nav .menu {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+    }
+
+    nav .menu li a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        font-weight: 500;
+        transition: 0.3 ease;
+    }
+
+    .project-section {
+        text-align: center;
+        padding-top: 100px;
+
+    }
+
+    .project-card1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .custom {
+        background-color: rgb(244, 244, 244);
+        border-radius: 20px;
+        padding: 40px;
+    }
+
+    .retail {
+        background-color: rgb(244, 244, 244);
+        border-radius: 20px;
+        padding: 40px;
+
+    }
+
+    .project-card2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .corporate {
+        background-color: rgb(244, 244, 244);
+        border-radius: 20px;
+        padding: 40px;
+    }
+
+    .Ecom {
+        background-color: rgb(244, 244, 244);
+        border-radius: 20px;
+        padding: 40px;
+        padding-left: 28px;
+    }
+
+    .project-card3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .service {
+        background-color: rgb(244, 244, 244);
+        border-radius: 20px;
+        padding: 40px;
+        padding-right: 19px;
+    }
+
+    .cloud {
+        background-color: rgb(244, 244, 244);
+        border-radius: 20px;
+        padding: 40px;
+
+    }
+</style>
+
+<body>
+    <nav id="navbar">
+        <div class="webname">INFOTECH SOLUTION</div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="project-section">
+        <h1>Our Projects</h1>
+        <p>We develop innovative and reliable digital solutions that help businesses grow and succeed.</p>
+        <div class="project-card1">
+            <div class="custom">
+                <h3> Custom ERP System</h3>
+                <p>A powerful ERP system designed to manage inventory, billing, HR, and workflow automation for
+                    small
+                    and medium businesses.</p>
+            </div>
+
+            <div class="retail">
+                <h3> Retail POS Software</h3>
+                <p>Fast, accurate and user-friendly billing software with GST support, barcode scanner integration
+                    and
+                    stock management.</p>
+            </div>
+        </div>
+
+        <div class="project-card2">
+            <div class="corporate">
+                <h3> Corporate Website Development</h3>
+                <p>Modern, mobile-friendly websites with SEO integration and clean design for companies and
+                    startups.
+                </p>
+            </div>
+
+            <div class="Ecom">
+                <h3> E-commerce Web App</h3>
+                <p>Online shopping platform with product management, secure payments, and customer dashboard.</p>
+            </div>
+        </div>
+
+        <div class="project-card3">
+            <div class="service">
+                <h3> Service Booking App</h3>
+                <p>A real-time booking application used by healthcare, salons, and service providers to schedule
+                    appointments.</p>
+            </div>
+
+            <div class="cloud">
+                <h3> Cloud Migration & Security</h3>
+                <p>Setup of cloud servers, data migration, firewalls, VPN and cyber-security solutions for
+                    businesses.
+                </p>
+            </div>
+        </div>
+        <script>
+            const navbar = document.getElementById("navbar");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+        </script>
+</body>
+
+</html>

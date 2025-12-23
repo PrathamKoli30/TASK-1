@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+</head>
+<style>
+    *{
+    font-family:'Roboto',sans-serif;
+    font-size:20px;
+}
+    nav {
+        position: fixed;
+        background-color: #1E69E0;
+        /*inital color */
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        ;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition: 0.4s ease;
+        z-index: 1000;
+    }
+
+    nav.scrolled {
+        background: rgb(86, 151, 250);
+        /* light blue when scrolled */
+    }
+
+    nav .webname {
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+        width: 80px;
+    }
+
+    nav .menu {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+    }
+
+    nav .menu li a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        font-weight: 500;
+        transition: 0.3 ease;
+    }
+
+    .Content {
+        padding: 100px;
+        font-size: 20px;
+    }
+
+    .aboutmain {
+        text-align: center;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-bottom: 50px;
+        background-color: rgb(244, 244, 244);
+        border-radius: 20px;
+        padding: 40px;
+        margin-top: 50px;
+    }
+    .who{
+        background-color: rgb(244, 244, 244);
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 50px;
+    }
+    .Who-are-we {
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 20px;
+        background-color: rgb(244, 244, 244);
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 50px;
+    }
+    .box{
+        width: 500px;
+    }
+    .do{
+        background-color: rgb(244, 244, 244);
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 50px;
+    }
+    .Promise{
+        background-color: rgb(244, 244, 244);
+        border-radius: 20px;
+        padding: 40px;
+    }
+</style>
+
+<body>
+    <nav id="navbar">
+        <div class="webname">INFOTECH SOLUTION</div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="Content">
+        <div class="aboutmain">
+            <p>
+            <h2>About Us-Infotech Solutions</h2>
+            </p>
+            <p>Welcome to Infotech Solutions, your trusted partner in innovative IT services and digital transformation.
+                We
+                are dedicated to providing smart, secure, and scalable technology solutions that help businesses grow in
+                today’s fast-moving digital world.</p>
+        </div>
+        <div class="who">
+            <div class="Who-are-we">
+                <p>
+                <h4>Who We Are</h4>
+                </p>
+            </div>
+            <P>Infotech Solutions is a leading IT service provider offering end-to-end technology solutions to startups,
+                small businesses, and enterprises. With a skilled team of developers, designers, and technology experts,
+                we
+                focus on delivering high-quality services that bring real value to your business.</P>
+        </div>
+        <div class="container">
+            <div class="box">
+                <p>
+                <h4>Our Mission</h4>
+                </p>
+                <p>Our mission is to empower businesses with reliable and modern technology solutions. We aim to
+                    simplify
+                    complex processes, strengthen digital presence, and ensure long-term growth through innovation and
+                    efficiency</p>
+            </div>
+            <div class="box">
+                <p>
+                <h4>Our Vision</h4>
+                </p>
+                <p>To become a globally recognized technology partner known for integrity, excellence, and customer
+                    success.
+                </p>
+                <p>
+            </div>
+        </div>
+        <div class="do">
+        <h4>What We Do</h4>
+        </p>
+        <p>At Infotech Solutions, we offer a wide range of IT services, including:</p>
+        <ul>
+            <li>Website Design & Development</li>
+            <li>Mobile App Development</li>
+            <li>Software Solutions</li>
+            <li>Cloud & Server Management</li>
+            <li>Digital Marketing & Branding</li>
+            <li>IT Support & Maintenance</li>
+            <li>Cybersecurity & Data Protection</li>
+        </ul>
+        </div>
+        <div class="Promise">
+        <p>
+        <h4>Our Promise</h4>
+        </p>
+        <p>We believe in building long-term relationships with our clients. Your growth is our success, and we work with
+            dedication to deliver results that exceed expectations.</p>
+        </div>
+    </section>
+    <script>
+        const navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+
+</html>
